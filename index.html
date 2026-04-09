@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>yer2089 | UI Designer Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0b1020, #121a33, #1b2750);
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+    header {
+      padding: 90px 0 50px;
+      text-align: center;
+    }
+    .tag {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.06);
+      margin-bottom: 18px;
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 52px;
+      margin-bottom: 14px;
+      letter-spacing: 0.5px;
+    }
+    .subtitle {
+      max-width: 760px;
+      margin: 0 auto 26px;
+      font-size: 18px;
+      color: #d7def7;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 14px;
+      font-weight: bold;
+      transition: 0.25s ease;
+      display: inline-block;
+    }
+    .btn-primary {
+      background: #ffffff;
+      color: #10162b;
+    }
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #ffffff;
+      background: rgba(255,255,255,0.06);
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.92;
+    }
+    section {
+      padding: 34px 0;
+    }
+    .section-title {
+      font-size: 32px;
+      margin-bottom: 18px;
+    }
+    .section-text {
+      color: #d7def7;
+      max-width: 900px;
+      margin-bottom: 24px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 22px;
+      padding: 22px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.22);
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 21px;
+    }
+    .card p, .card li {
+      color: #d7def7;
+      font-size: 15px;
+    }
+    .card ul {
+      padding-left: 18px;
+      margin-top: 10px;
+    }
+    .portfolio-item {
+      overflow: hidden;
+    }
+    .placeholder {
+      height: 180px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #c7d2ff;
+      font-weight: bold;
+      margin-bottom: 14px;
+      border: 1px dashed rgba(255,255,255,0.18);
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skill {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      font-size: 14px;
+      color: #eef2ff;
+    }
+    footer {
+      padding: 40px 0 70px;
+      text-align: center;
+      color: #cfd7f2;
+    }
+    .contact-box {
+      text-align: center;
+      padding: 28px;
+    }
+    .contact-box a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 38px; }
+      .subtitle { font-size: 16px; }
+      .section-title { font-size: 27px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="tag">Roblox UI Designer Portfolio</div>
+      <h1>yer2089</h1>
+      <p class="subtitle">
+        I design modern, polished, and professional Roblox user interfaces with a strong focus on clean layouts,
+        usability, animations, and overall presentation.
+      </p>
+      <div class="buttons">
+        <a class="btn btn-primary" href="#work">View My Work</a>
+        <a class="btn btn-secondary" href="#contact">Contact Me</a>
+      </div>
+    </header>
+
+    <section>
+      <h2 class="section-title">About Me</h2>
+      <p class="section-text">
+        I am a Roblox UI designer with experience creating interfaces for in-game systems, dashboards, menus,
+        management panels, and custom user experiences. My style focuses on modern visuals, smooth flow,
+        and making systems feel premium rather than basic.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="section-title">What I Design</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Game Menus</h3>
+          <p>Main menus, navigation systems, and polished landing screens for Roblox experiences.</p>
+        </div>
+        <div class="card">
+          <h3>Management Panels</h3>
+          <p>Professional staff panels, admin systems, shift systems, and in-game dashboards.</p>
+        </div>
+        <div class="card">
+          <h3>Interactive UI</h3>
+          <p>Animated buttons, transitions, feedback effects, popups, tabs, and user-friendly flows.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2 class="section-title">Previous Work</h2>
+      <p class="section-text">Replace these placeholders with your real screenshots when you are ready.</p>
+      <div class="grid">
+        <div class="card portfolio-item">
+          <div class="placeholder">Add UI Screenshot 1</div>
+          <h3>Staff Management UI</h3>
+          <p>A clean and professional interface made for team/staff systems with modern panels and clear navigation.</p>
+        </div>
+        <div class="card portfolio-item">
+          <div class="placeholder">Add UI Screenshot 2</div>
+          <h3>In-Game System UI</h3>
+          <p>A functional Roblox interface designed for usability while still looking polished and premium.</p>
+        </div>
+        <div class="card portfolio-item">
+          <div class="placeholder">Add UI Screenshot 3</div>
+          <h3>Animated Dashboard</h3>
+          <p>A dashboard concept focused on modern styling, visual hierarchy, and smooth interaction design.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Skills</h2>
+      <div class="skills">
+        <div class="skill">Roblox UI Design</div>
+        <div class="skill">Modern Layouts</div>
+        <div class="skill">Animated Interfaces</div>
+        <div class="skill">User Experience</div>
+        <div class="skill">Studio Implementation</div>
+        <div class="skill">Clean Visual Design</div>
+        <div class="skill">Game Menus</div>
+        <div class="skill">Dashboard Systems</div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Why Me</h2>
+      <div class="card">
+        <ul>
+          <li>I focus on making UI look modern, clean, and high quality.</li>
+          <li>I understand both design and how UI works inside Roblox Studio.</li>
+          <li>I aim for interfaces that are not only good looking, but easy to use.</li>
+          <li>I pay attention to detail, consistency, and overall presentation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="card contact-box">
+        <p>Email: <a href="mailto:developerstudios700@gmail.com">developerstudios700@gmail.com</a></p>
+        
+      </div>
+    </section>
+
+    <footer>
+      <p>yer2089 • Roblox UI Designer Portfolio</p>
+    </footer>
+  </div>
+</body>
+</html>
